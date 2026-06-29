@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise Luxury Salon — Where Beauty Meets Luxury</title>
+    <meta name="description" content="Experience premium hair care at Paradise Luxury Salon. Expert stylists, premium products, and stunning transformations. Book your appointment today.">
+    <meta name="keywords" content="luxury salon, hair salon, hair care, beauty salon, hair styling, hair coloring, bridal makeup">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">P</div>
+            <div class="preloader-text">PARADISE</div>
+            <div class="preloader-bar"><div class="preloader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-follower" id="cursorFollower"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Navigation -->
+    <header id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="navLogo">
+                <div class="logo-icon">P</div>
+                <div class="logo-text">
+                    <span class="logo-name">PARADISE</span>
+                    <span class="logo-tagline">LUXURY SALON</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-section="home">HOME</a>
+                <a href="#about" class="nav-link" data-section="about">ABOUT US</a>
+                <a href="#services" class="nav-link" data-section="services">SERVICES</a>
+                <a href="#gallery" class="nav-link" data-section="gallery">GALLERY</a>
+                <a href="#pricing" class="nav-link" data-section="pricing">PRICING</a>
+                <a href="#contact" class="nav-link" data-section="contact">CONTACT</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="tel:8360586043" class="nav-phone" id="navPhone">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    8360586043
+                </a>
+                <a href="#contact" class="nav-cta" id="navCta">
+                    BOOK APPOINTMENT
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+            </div>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileOverlay">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-link" data-section="home">HOME</a>
+            <a href="#about" class="mobile-link" data-section="about">ABOUT US</a>
+            <a href="#services" class="mobile-link" data-section="services">SERVICES</a>
+            <a href="#gallery" class="mobile-link" data-section="gallery">GALLERY</a>
+            <a href="#pricing" class="mobile-link" data-section="pricing">PRICING</a>
+            <a href="#contact" class="mobile-link" data-section="contact">CONTACT</a>
+            <div class="mobile-menu-cta">
+                <a href="#contact" class="btn btn-primary btn-lg">BOOK APPOINTMENT</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-particles" id="heroParticles"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-subtitle reveal-up">
+                    <span class="line-accent"></span>
+                    Experience luxury beauty services at one of Ferozepur's finest premium salons.
+                </div>
+
+
+                <h1 class="hero-title">
+                    <span class="title-line reveal-up" style="--delay: 0.1s">Ferozepur's</span>
+                    <span class="title-line reveal-up" style="--delay: 0.2s">Premier</span>
+                    <span class="title-line reveal-up" style="--delay: 0.3s">Luxury </span>
+                    <span class="title-line title-accent reveal-up" style="--delay: 0.4s">Salon</span>
+                </h1>
+                <p class="hero-description reveal-up" style="--delay: 0.5s">
+                    Experience luxury beauty services at one of Ferozepur's finest premium salons..<br>
+                    Stunning results that speak for themselves.
+                </p>
+                <div class="hero-buttons reveal-up" style="--delay: 0.6s">
+                    <a href="#contact" class="btn btn-primary btn-lg" id="heroBookBtn">
+                        BOOK YOUR APPOINTMENT
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                    <a href="#services" class="btn btn-outline btn-lg" id="heroServicesBtn">
+                        EXPLORE SERVICES
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+                <div class="hero-trust reveal-up" style="--delay: 0.7s">
+                    <div class="trust-avatars">
+                        <img src="images/clients.png" alt="Happy Clients" class="trust-avatar-group">
+                    </div>
+                    <div class="trust-info">
+                        <span class="trust-count">TRUSTED BY <strong>1000+</strong></span>
+                        <span class="trust-label">HAPPY CLIENTS</span>
+                        <div class="trust-stars">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image reveal-scale">
+                <div class="hero-image-wrapper">
+                    <img src="images/hero-model.png" alt="Beautiful hair transformation at Paradise Salon" id="heroImage">
+                    <div class="hero-image-glow"></div>
+                </div>
+                <!-- Before / After floating cards -->
+                <div class="hero-results-card" id="heroResultsCard">
+                    <div class="results-label">
+                        <span class="line-accent"></span> REAL RESULTS
+                    </div>
+                    <div class="results-preview">
+                        <img src="images/before-after.png" alt="Before and After Transformation">
+                    </div>
+                    <a href="#gallery" class="results-link">
+                        SEE MORE TRANSFORMATIONS
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Bar -->
+    <section class="features-bar" id="featuresBar">
+        <div class="features-container">
+            <div class="feature-item reveal-up" style="--delay: 0s">
+                <div class="feature-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                    </svg>
+                </div>
+                <div class="feature-text">
+                    <h4>EXPERT STYLISTS</h4>
+                    <p>Trained professionals at your service</p>
+                </div>
+            </div>
+            <div class="feature-divider"></div>
+            <div class="feature-item reveal-up" style="--delay: 0.1s">
+                <div class="feature-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/>
+                    </svg>
+                </div>
+                <div class="feature-text">
+                    <h4>PREMIUM PRODUCTS</h4>
+                    <p>We only use the best for your hair</p>
+                </div>
+            </div>
+            <div class="feature-divider"></div>
+            <div class="feature-item reveal-up" style="--delay: 0.2s">
+                <div class="feature-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/>
+                    </svg>
+                </div>
+                <div class="feature-text">
+                    <h4>LUXURY EXPERIENCE</h4>
+                    <p>Relax in our premium salon environment</p>
+                </div>
+            </div>
+            <div class="feature-divider"></div>
+            <div class="feature-item reveal-up" style="--delay: 0.3s">
+                <div class="feature-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                </div>
+                <div class="feature-text">
+                    <h4>EASY BOOKING</h4>
+                    <p>Book your slot in seconds</p>
+                </div>
+            </div>
+            <div class="feature-divider"></div>
+            <div class="feature-item reveal-up" style="--delay: 0.4s">
+                <div class="feature-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <polyline points="9 12 11 14 15 10"/>
+                    </svg>
+                </div>
+                <div class="feature-text">
+                    <h4>SATISFACTION</h4>
+                    <p>100% happiness guaranteed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img-main reveal-left">
+                        <img src="images/service-haircut.png" alt="Expert salon service">
+                        <div class="about-img-overlay"></div>
+                    </div>
+                    <div class="about-img-secondary reveal-left" style="--delay: 0.2s">
+                        <img src="images/service-coloring.png" alt="Hair coloring service">
+                    </div>
+                    <div class="about-stats-card reveal-up" style="--delay: 0.3s">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">YEARS OF EXCELLENCE</div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="section-label reveal-up">
+                        <span class="line-accent"></span> ABOUT US
+                    </div>
+                    <h2 class="section-title reveal-up" style="--delay: 0.1s">
+                        Crafting Beauty<br>
+                        <span class="text-accent">Since 2009</span>
+                    </h2>
+                    <p class="about-text reveal-up" style="--delay: 0.2s">
+                        At Paradise Luxury Salon, we believe every person deserves to feel extraordinary. Our team of world-class stylists combines artistry with technique to create looks that are uniquely you.
+                    </p>
+                    <p class="about-text reveal-up" style="--delay: 0.3s">
+                        Using only premium, salon-grade products from the world's finest brands, we ensure your hair receives the care it truly deserves. Step into our sanctuary of beauty and experience the Paradise difference.
+                    </p>
+                    <div class="about-counters reveal-up" style="--delay: 0.4s">
+                        <div class="counter-item">
+                            <span class="counter-number" data-count="5000">0</span><span class="counter-plus">+</span>
+                            <span class="counter-label">Happy Clients</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter-number" data-count="25">0</span><span class="counter-plus">+</span>
+                            <span class="counter-label">Expert Stylists</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter-number" data-count="50">0</span><span class="counter-plus">+</span>
+                            <span class="counter-label">Awards Won</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <div class="section-label reveal-up">
+                    <span class="line-accent"></span> OUR SERVICES <span class="line-accent"></span>
+                </div>
+                <h2 class="section-title reveal-up" style="--delay: 0.1s">
+                    Premium Services<br>
+                    <span class="text-accent">Tailored For You</span>
+                </h2>
+                <p class="section-desc reveal-up" style="--delay: 0.2s">
+                    Discover our range of luxury treatments designed to transform and rejuvenate
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal-up" style="--delay: 0s" id="serviceHaircut">
+                    <div class="service-image">
+                        <img src="images/service-haircut.png" alt="Haircut & Styling">
+                        <div class="service-overlay">
+                            <span class="service-price">From ₹499</span>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-number">01</div>
+                        <h3>Haircut & Styling</h3>
+                        <p>Precision cuts and creative styling by our master stylists. From classic to contemporary, we craft the perfect look.</p>
+                        <a href="#contact" class="service-link">
+                            Book Now
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card reveal-up" style="--delay: 0.15s" id="serviceColoring">
+                    <div class="service-image">
+                        <img src="images/service-coloring.png" alt="Hair Coloring">
+                        <div class="service-overlay">
+                            <span class="service-price">From ₹1,499</span>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-number">02</div>
+                        <h3>Hair Coloring</h3>
+                        <p>From subtle balayage to bold transformations. Our colorists use premium products for vibrant, lasting results.</p>
+                        <a href="#contact" class="service-link">
+                            Book Now
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card reveal-up" style="--delay: 0.3s" id="serviceTreatment">
+                    <div class="service-image">
+                        <img src="images/service-treatment.png" alt="Hair Spa & Treatment">
+                        <div class="service-overlay">
+                            <span class="service-price">From ₹999</span>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-number">03</div>
+                        <h3>Hair Spa & Treatment</h3>
+                        <p>Deep conditioning, keratin treatments, and revitalizing therapies to restore your hair's natural health and shine.</p>
+                        <a href="#contact" class="service-link">
+                            Book Now
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card reveal-up" style="--delay: 0.45s" id="serviceBridal">
+                    <div class="service-image">
+                        <img src="images/hero-model.png" alt="Bridal & Makeup">
+                        <div class="service-overlay">
+                            <span class="service-price">From ₹4,999</span>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-number">04</div>
+                        <h3>Bridal & Makeup</h3>
+                        <p>Make your special day unforgettable with our bridal packages. Complete styling, makeup, and hair artistry.</p>
+                        <a href="#contact" class="service-link">
+                            Book Now
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Transformations Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <div class="section-label reveal-up">
+                    <span class="line-accent"></span> REAL RESULTS <span class="line-accent"></span>
+                </div>
+                <h2 class="section-title reveal-up" style="--delay: 0.1s">
+                    Stunning<br>
+                    <span class="text-accent">Transformations</span>
+                </h2>
+            </div>
+            <div class="gallery-showcase">
+                <div class="gallery-main reveal-scale">
+                    <div class="before-after-container" id="beforeAfterContainer">
+                        <img src="images/before-after.png" alt="Before and After Hair Transformation" class="gallery-main-img">
+                        <div class="gallery-badge before-badge">BEFORE</div>
+                        <div class="gallery-badge after-badge">AFTER</div>
+                    </div>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item reveal-up" style="--delay: 0s">
+                        <img src="images/hero-model.png" alt="Salon Transformation 1">
+                        <div class="gallery-item-overlay">
+                            <span>Hair Styling</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item reveal-up" style="--delay: 0.1s">
+                        <img src="images/service-coloring.png" alt="Salon Transformation 2">
+                        <div class="gallery-item-overlay">
+                            <span>Hair Coloring</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item reveal-up" style="--delay: 0.2s">
+                        <img src="images/service-haircut.png" alt="Salon Transformation 3">
+                        <div class="gallery-item-overlay">
+                            <span>Precision Cut</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item reveal-up" style="--delay: 0.3s">
+                        <img src="images/service-treatment.png" alt="Salon Transformation 4">
+                        <div class="gallery-item-overlay">
+                            <span>Spa Treatment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <div class="section-label reveal-up">
+                    <span class="line-accent"></span> PRICING <span class="line-accent"></span>
+                </div>
+                <h2 class="section-title reveal-up" style="--delay: 0.1s">
+                    Transparent<br>
+                    <span class="text-accent">Pricing Plans</span>
+                </h2>
+                <p class="section-desc reveal-up" style="--delay: 0.2s">
+                    Luxury made accessible. Choose the perfect package for your needs.
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal-up" style="--delay: 0s" id="pricingEssential">
+                    <div class="pricing-header">
+                        <span class="pricing-badge">ESSENTIAL</span>
+                        <div class="pricing-price">
+                            <span class="price-currency">₹</span>
+                            <span class="price-amount">999</span>
+                        </div>
+                        <p class="pricing-period">Starting from</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Haircut & Styling
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Hair Wash & Blow Dry
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Basic Scalp Treatment
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Complimentary Beverage
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">CHOOSE PLAN</a>
+                </div>
+                <div class="pricing-card pricing-featured reveal-up" style="--delay: 0.15s" id="pricingPremium">
+                    <div class="pricing-popular">MOST POPULAR</div>
+                    <div class="pricing-header">
+                        <span class="pricing-badge">PREMIUM</span>
+                        <div class="pricing-price">
+                            <span class="price-currency">₹</span>
+                            <span class="price-amount">2,499</span>
+                        </div>
+                        <p class="pricing-period">Starting from</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Everything in Essential
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Hair Coloring / Highlights
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Deep Conditioning Treatment
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Head Massage (15 min)
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Priority Scheduling
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-block">CHOOSE PLAN</a>
+                </div>
+                <div class="pricing-card reveal-up" style="--delay: 0.3s" id="pricingRoyal">
+                    <div class="pricing-header">
+                        <span class="pricing-badge">ROYAL</span>
+                        <div class="pricing-price">
+                            <span class="price-currency">₹</span>
+                            <span class="price-amount">5,999</span>
+                        </div>
+                        <p class="pricing-period">Starting from</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Everything in Premium
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Keratin / Smoothening
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Full Spa Experience
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Bridal Consultation
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            VIP Lounge Access
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Complimentary Follow-up
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">CHOOSE PLAN</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <div class="section-label reveal-up">
+                    <span class="line-accent"></span> TESTIMONIALS <span class="line-accent"></span>
+                </div>
+                <h2 class="section-title reveal-up" style="--delay: 0.1s">
+                    What Our<br>
+                    <span class="text-accent">Clients Say</span>
+                </h2>
+            </div>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="testimonial-text">"Absolutely the best salon experience I've ever had! The stylists are incredibly talented and the atmosphere is so luxurious. My hair has never looked better."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div class="author-info">
+                            <strong>Priya Sharma</strong>
+                            <span>Regular Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="testimonial-text">"I got my bridal makeup done here and I was blown away. Every detail was perfect. The team made me feel like a queen on my special day!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <strong>Anita Verma</strong>
+                            <span>Bridal Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="testimonial-text">"Been coming here for 3 years now and the consistency is remarkable. The hair spa treatments are incredibly relaxing and my hair feels amazing after every visit."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <strong>Riya Kapoor</strong>
+                            <span>Loyal Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots" id="testimonialDots">
+                <button class="dot active" data-index="0"></button>
+                <button class="dot" data-index="1"></button>
+                <button class="dot" data-index="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="section-label reveal-up">
+                        <span class="line-accent"></span> GET IN TOUCH
+                    </div>
+                    <h2 class="section-title reveal-up" style="--delay: 0.1s">
+                        Ready For Your<br>
+                        <span class="text-accent">Transformation?</span>
+                    </h2>
+                    <p class="contact-desc reveal-up" style="--delay: 0.2s">
+                        Book your appointment today and let our experts create the look you've always dreamed of.
+                    </p>
+                    <div class="contact-details reveal-up" style="--delay: 0.3s">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>123 Fashion Street, Model Town<br>New Delhi, India - 110009</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+91 8360586043<br>+91 9876543210</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Mon - Sat: 10:00 AM - 8:00 PM<br>Sunday: 11:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal-up" style="--delay: 0.2s">
+                    <form class="contact-form" id="contactForm">
+                        <h3 class="form-title">Book Your Appointment</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Select Service</label>
+                            <select id="service" name="service" required>
+                                <option value="">Choose a service...</option>
+                                <option value="haircut">Haircut & Styling</option>
+                                <option value="coloring">Hair Coloring</option>
+                                <option value="treatment">Hair Spa & Treatment</option>
+                                <option value="bridal">Bridal & Makeup</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select time...</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="16:00">4:00 PM</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Special Requests</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Any special requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn">
+                            BOOK APPOINTMENT
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Bar -->
+    <section class="cta-bar">
+        <div class="cta-container">
+            <div class="cta-content">
+                <svg class="cta-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span>READY FOR YOUR TRANSFORMATION?</span>
+            </div>
+            <a href="#contact" class="btn btn-outline-light">
+                BOOK YOUR APPOINTMENT
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <div class="logo-icon">P</div>
+                        <div class="logo-text">
+                            <span class="logo-name">PARADISE</span>
+                            <span class="logo-tagline">LUXURY SALON</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">Where beauty meets luxury. Experience world-class hair care and styling at Paradise Luxury Salon.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="Instagram" id="socialInstagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook" id="socialFacebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube" id="socialYoutube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp" id="socialWhatsapp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <a href="#services">Haircut & Styling</a>
+                    <a href="#services">Hair Coloring</a>
+                    <a href="#services">Hair Spa & Treatment</a>
+                    <a href="#services">Bridal & Makeup</a>
+                    <a href="#services">Keratin Treatment</a>
+                    <a href="#services">Scalp Therapy</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Info</h4>
+                    <p>123 Fashion Street, Model Town<br>New Delhi - 110009</p>
+                    <a href="tel:8360586043">+91 8360586043</a>
+                    <a href="mailto:hello@paradisesalon.com">hello@paradisesalon.com</a>
+                    <p>Mon-Sat: 10AM - 8PM<br>Sun: 11AM - 6PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Paradise Luxury Salon. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons (Mobile) -->
+    <div class="floating-actions" id="floatingActions">
+        <a href="tel:8360586043" class="fab fab-call" id="fabCall">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            CALL NOW
+        </a>
+        <a href="https://wa.me/918360586043" class="fab fab-whatsapp" id="fabWhatsapp" target="_blank">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WHATSAPP
+        </a>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
